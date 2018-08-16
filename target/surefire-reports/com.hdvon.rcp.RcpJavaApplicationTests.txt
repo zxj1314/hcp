@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.hdvon.rcp.RcpJavaApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.375 sec - in com.hdvon.rcp.RcpJavaApplicationTests
