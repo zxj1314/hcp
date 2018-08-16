@@ -1,0 +1,43 @@
+server:
+  port: 8092
+
+spring:
+  application:
+    index: 0
+    name: rcp-java
+
+  main:
+    banner-mode: "off"
+
+  datasource:
+    name: rcp-java-DBCP
+    url: jdbc:mysql://localhost:3306/rcp_dev?characterEncoding=UTF-8&useUnicode=true&zeroDateTimeBehavior=convertToNull&serverTimezone=GMT
+    username: cm9vdA==
+    password: YWRtaW4=
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      connectionTimeout: 50000
+      idleTimeout: 600000
+      maxLifetime: 3600000
+      validationTimeout: 5000
+      leakDetectionThreshold: 20000
+      maximumPoolSize: 20
+      minimumIdle: 20
+
+  redis:
+    database: 10
+    host: 192.168.1.201
+    port: 6379
+    password: aGQqZStydA==
+    timeout: 2000
+    pool:
+      max-active: 1024
+      max-idle: 200
+      max-wait: 1000
+      min-idle: 200
+      testOnBorrow: true
+      testOnReturn: true
+
+mybatis:
+  config-location: classpath:mybatis-config.xml
+  mapper-locations: com/hdvon/rcp-java/mapper/**/*.xml
